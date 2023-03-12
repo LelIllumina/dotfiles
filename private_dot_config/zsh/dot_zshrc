@@ -35,17 +35,17 @@ export PATH="$PATH:${$(find ~/.local/bin -type d -printf %p:)%%:}"
 
 
 # aliases
-alias sudo="sudo "
-alias edge="microsoft-edge-stable"
-alias config="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
-#alias uwufetch="uwufetch | lolcat"
-alias :q="exit"
+alias 
+ sudo="sudo " \
+ edge="microsoft-edge-stable" \
+ config="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME" \
 
-alias -s conf=nvim
-alias -s png=feh
-alias -s jpg=feh
-alias -s jpeg=feh
-
+alias -s
+ conf=nvim \
+ png=sxiv \
+ jpg=sxiv \
+ jpeg=sxiv \
+gif=sxiv
 
 # Scripts
 #source <(curl -sL init.zshell.dev); zzinit
