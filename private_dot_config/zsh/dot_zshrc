@@ -1,0 +1,58 @@
+#!/bin/zsh
+
+# ENV variables
+# Default programs:
+export QT_QPA_PLATFORMTHEME=qt5ct
+export CC=clang
+export CXX=clang++
+export EDITOR="nvim"
+export VISUAL="gedit"
+export TERMINAL="st"
+export TERMINAL_PROG="st"
+export BROWSER="microsoft-edge-stable"
+
+# ~/ Clean-up:
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_CACHE_HOME="$HOME/.cache"
+export XINITRC="$XDG_CONFIG_HOME/x11/xinitrc"
+#export XAUTHORITY="$XDG_RUNTIME_DIR/Xauthority" # This line will break some DMs.
+export WGETRC="$XDG_CONFIG_HOME/wget/wgetrc"
+export INPUTRC="$XDG_CONFIG_HOME/shell/inputrc"
+export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
+#export GNUPGHOME="$XDG_DATA_HOME/gnupg"
+export WINEPREFIX="$XDG_DATA_HOME/wineprefixes/default"
+export PASSWORD_STORE_DIR="$XDG_DATA_HOME/password-store"
+export TMUX_TMPDIR="$XDG_RUNTIME_DIR"
+export ANDROID_SDK_HOME="$XDG_CONFIG_HOME/android"
+export CARGO_HOME="$XDG_DATA_HOME/cargo"
+export GOPATH="$XDG_DATA_HOME/go"
+export ANSIBLE_CONFIG="$XDG_CONFIG_HOME/ansible/ansible.cfg"
+export HISTFILE="$XDG_DATA_HOME/history"
+export PYTHONSTARTUP="$XDG_CONFIG_HOME/python/pythonrc"
+export SQLITE_HISTORY="$XDG_DATA_HOME/sqlite_history"
+export PATH="$PATH:${$(find ~/.local/bin -type d -printf %p:)%%:}"
+
+
+# aliases
+alias sudo="sudo "
+alias edge="microsoft-edge-stable"
+alias config="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
+#alias uwufetch="uwufetch | lolcat"
+alias :q="exit"
+
+alias -s conf=nvim
+alias -s png=feh
+alias -s jpg=feh
+alias -s jpeg=feh
+
+
+# Scripts
+#source <(curl -sL init.zshell.dev); zzinit
+source /usr/share/zsh/plugins/zsh-you-should-use/you-should-use.plugin.zsh
+source /usr/share/zsh-dwim/init.zsh
+source /usr/share/nvm/init-nvm.sh
+source ~/.zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh
+#source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
