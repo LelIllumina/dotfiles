@@ -1,0 +1,16 @@
+{
+    "currentVersionInfo": {
+        "version": "1.13.0",
+        "hasShownChangelog": true
+    },
+    "settings": {
+        "emoteSize": 48,
+        "autocompleteEmoteSize": 15,
+        "autocompleteItems": 10,
+        "customEmotes": {},
+        "requirePrefix": true,
+        "prefix": ";",
+        "resizeMethod": "smallest",
+        "showStandardEmotes": true
+    }
+}
