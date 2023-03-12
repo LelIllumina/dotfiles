@@ -1,0 +1,28 @@
+# ENV variables
+export QT_QPA_PLATFORMTHEME=qt5ct
+export CC=clang
+export CXX=clang++
+export EDITOR=nvim
+
+# aliases
+alias sudo="sudo "
+alias edge="microsoft-edge-stable"
+alias config="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
+#alias uwufetch="uwufetch | lolcat"
+alias :q="exit"
+
+alias -s conf=nvim
+alias -s png=feh
+alias -s jpg=feh
+alias -s jpeg=feh
+
+
+# Scripts
+#source <(curl -sL init.zshell.dev); zzinit
+source /usr/share/zsh/plugins/zsh-you-should-use/you-should-use.plugin.zsh
+source /usr/share/zsh-dwim/init.zsh
+source /usr/share/nvm/init-nvm.sh
+source ~/.zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh
+#source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.plugin.zsh
