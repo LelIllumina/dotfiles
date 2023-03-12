@@ -1,14 +1,14 @@
 {
 	"all": {
 		"changeLogs": {
-			"BDFDB": "3.0.8",
+			"BDFDB": "3.1.5",
 			"BetterFriendList": "1.5.2",
 			"CharCounter": "1.6.2",
 			"FriendNotifications": "1.8.7",
 			"GameActivityToggle": "1.1.8",
-			"ImageUtilities": "5.1.6",
+			"ImageUtilities": "5.1.8",
 			"NotificationSounds": "3.7.6",
-			"PluginRepo": "2.4.5",
+			"PluginRepo": "2.4.6",
 			"ReadAllNotificationsButton": "1.7.4",
 			"ServerCounter": "1.0.6",
 			"ServerDetails": "1.1.4",

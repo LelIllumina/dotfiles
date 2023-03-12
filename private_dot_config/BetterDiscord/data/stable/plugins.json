@@ -1,1 +1,26 @@
-{}
+{
+    "BDFDB": true,
+    "ZeresPluginLibrary": true,
+    "BetterChatNames": true,
+    "BetterFormattingRedux": true,
+    "BetterFriendList": true,
+    "CharCounter": true,
+    "CrashRecovery": false,
+    "FreeEmojis": false,
+    "DoNotTrack": true,
+    "Double Click To Edit": true,
+    "EmoteReplacer": false,
+    "FreeStickers": false,
+    "ImageUtilities": true,
+    "InvisibleTyping": true,
+    "MessageLoggerV2": false,
+    "PermissionsViewer": true,
+    "PluginRepo": true,
+    "ReadAllNotificationsButton": true,
+    "ServerCounter": true,
+    "ServerDetails": true,
+    "SplitLargeMessages": true,
+    "SpotifyControls": false,
+    "TypingIndicator": true,
+    "TypingUsersAvatars": true
+}
