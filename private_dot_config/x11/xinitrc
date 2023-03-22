@@ -16,11 +16,11 @@ if [ -f $sysmodmap ]; then
 fi
 
 if [ -f "$userresources" ]; then
-	xrdb -merge "$userresources"
+	xrdb -merge $HOME/.Xresources
 fi
 
 if [ -f "$usermodmap" ]; then
-	xmodmap "$usermodmap"
+	xmodmap $HOME/.Xmodmap
 fi
 
 # start some nice programs
@@ -39,6 +39,6 @@ session=${1:-dwm}
 case $session in
 dwm) exec dbus-launch --exit-with-session dwm ;;
 i3 | i3wm) exec dbus-launch --exit-with-session i3 ;;
-	# No known session, try to run it as command
+# No known session, try to run it as command
 *) exec $1 ;;
 esac

@@ -1,5 +1,6 @@
 -- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
+require("colorizer").setup()
 
 vim.g.neovide_scale_factor = 1.0
 local change_scale_factor = function(delta)
