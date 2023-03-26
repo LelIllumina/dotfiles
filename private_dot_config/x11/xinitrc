@@ -1,27 +1,12 @@
 #!/bin/sh
 
-userresources=$HOME/.Xresources
-usermodmap=$HOME/.Xmodmap
-sysresources=/etc/X11/xinit/.Xresources
-sysmodmap=/etc/X11/xinit/.Xmodmap
+xrandr --setprovideroutputsource modesetting NVIDIA-0
+xrandr --auto
 
 # merge in defaults and keymaps
 
-if [ -f $sysresources ]; then
-	xrdb -merge $sysresources
-fi
-
-if [ -f $sysmodmap ]; then
-	xmodmap $sysmodmap
-fi
-
-if [ -f "$userresources" ]; then
-	xrdb -merge $HOME/.Xresources
-fi
-
-if [ -f "$usermodmap" ]; then
-	xmodmap $HOME/.Xmodmap
-fi
+xrdb -merge $HOME/.Xresources
+xmodmap $HOME/.Xmodmap
 
 # start some nice programs
 
@@ -32,13 +17,12 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then
 	unset f
 fi
 
-feh --bg-scale /usr/local/share/backgrounds/download.png
-
 session=${1:-dwm}
 
 case $session in
 dwm) exec dbus-launch --exit-with-session dwm ;;
 i3 | i3wm) exec dbus-launch --exit-with-session i3 ;;
-# No known session, try to run it as command
-*) exec $1 ;;
+xmonad) exec xmonad ;;
+	# No known session, try to run it as command
+	#*) exec $1 ;;
 esac
