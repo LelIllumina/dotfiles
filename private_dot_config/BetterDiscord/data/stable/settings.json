@@ -1,8 +1,7 @@
 {
     "general": {
-        "publicServers": true,
         "voiceDisconnect": false,
-        "showToasts": true,
+        "showToasts": false,
         "mediaKeys": false
     },
     "addons": {
