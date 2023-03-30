@@ -1,0 +1,6 @@
+2023/03/30-21:26:25.662 108cf Reusing MANIFEST /home/lel/.config/ArmCord/Local Storage/leveldb/MANIFEST-000001
+2023/03/30-21:26:25.671 108cf Recovering log #21
+2023/03/30-21:26:25.685 108cf Reusing old log /home/lel/.config/ArmCord/Local Storage/leveldb/000021.log 
+2023/03/30-21:28:30.271 10947 Level-0 table #25: started
+2023/03/30-21:28:31.385 10947 Level-0 table #25: 1504006 bytes OK
+2023/03/30-21:28:31.441 10947 Delete type=0 #21

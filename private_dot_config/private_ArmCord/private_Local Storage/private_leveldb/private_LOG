@@ -1,0 +1,18 @@
+2023/03/30-21:29:35.177 10d75 Reusing MANIFEST /home/lel/.config/ArmCord/Local Storage/leveldb/MANIFEST-000001
+2023/03/30-21:29:35.177 10d75 Recovering log #24
+2023/03/30-21:29:35.177 10d75 Reusing old log /home/lel/.config/ArmCord/Local Storage/leveldb/000024.log 
+2023/03/30-22:09:19.990 10d75 Level-0 table #28: started
+2023/03/30-22:09:20.063 10d75 Level-0 table #28: 20787 bytes OK
+2023/03/30-22:09:20.163 10d75 Delete type=0 #24
+2023/03/30-22:46:20.996 1af7e Level-0 table #30: started
+2023/03/30-22:46:21.073 1af7e Level-0 table #30: 29649 bytes OK
+2023/03/30-22:46:21.151 1af7e Delete type=0 #27
+2023/03/30-22:46:21.151 1af7e Compacting 4@0 + 1@1 files
+2023/03/30-22:46:21.239 1af7e Generated table #31@0: 38 keys, 1564766 bytes
+2023/03/30-22:46:21.239 1af7e Compacted 4@0 + 1@1 files => 1564766 bytes
+2023/03/30-22:46:21.317 1af7e compacted to: files[ 0 1 1 0 0 0 0 ]
+2023/03/30-22:46:21.317 1af7e Delete type=2 #19
+2023/03/30-22:46:21.317 1af7e Delete type=2 #22
+2023/03/30-22:46:21.317 1af7e Delete type=2 #25
+2023/03/30-22:46:21.317 1af7e Delete type=2 #28
+2023/03/30-22:46:21.317 1af7e Delete type=2 #30
